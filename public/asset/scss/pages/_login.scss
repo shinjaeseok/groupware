@@ -1,0 +1,66 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.login-wrapper {
+	margin: 0 auto;
+	max-height: 100%;
+}
+
+.login {
+	width: 100%;
+	padding: 0 100px;
+
+	.btn {
+		margin-top: 1.5rem;
+	}
+
+	form {
+		margin: 2rem 0;
+	}
+
+	.form-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.forgot-pass {
+		margin-left: auto;
+	}
+
+}
+
+.login-bg {
+	background-size: cover;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1500px) {
+	.login {
+		width: 100%;
+		padding: 0 60px;
+	}
+
+}
+
+@media screen and (max-width:1199px) {
+	.login {
+		width: 100%;
+		padding: 50px 20px;
+	}
+
+}
+
+@media screen and (max-width:1199px) {
+	.login .form-bottom {
+		display: block;
+	}
+
+	.login .form-bottom .custom-control {
+		margin-bottom: 10px;
+	}
+
+}

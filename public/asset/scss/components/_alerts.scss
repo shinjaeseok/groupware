@@ -1,0 +1,158 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.alert-primary {
+	background-color: $primary;
+	border-color: $primary;
+	color: $white;
+}
+
+.alert-secondary {
+	background-color: $secondary;
+	border-color: $secondary;
+	color: $white;
+}
+
+.alert-success {
+	background-color: $success;
+	border-color: $success;
+	color: $white;
+}
+
+.alert-danger {
+	background-color: $danger;
+	border-color: $danger;
+	color: $white;
+}
+
+.alert-warning {
+	background-color: $warning;
+	border-color: $warning;
+}
+
+.alert-info {
+	background-color: $info;
+	border-color: $info;
+	color: $white;
+}
+
+.alert-light {
+	background-color: $light;
+	border-color: $light;
+}
+
+.alert-dark {
+	background-color: $dark;
+	border-color: $dark;
+	color: $white;
+}
+
+.alert-border-icon {
+	background-color: transparent;
+	padding: 1.5rem 1.50rem;
+
+	i {
+		padding-right: 0.7143rem;
+		font-size: $font-md;
+	}
+
+}
+
+.alert-icon {
+	padding: 1.5rem 1.50rem;
+
+	i {
+		padding-right: 0.7143rem;
+		font-size: $font-md;
+	}
+
+}
+
+.alert-border-icon.alert-dismissible {
+	.close {
+		padding: 1.5rem 1.50rem;
+		text-shadow: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+}
+
+.alert-icon.alert-dismissible {
+	.close {
+		padding: 1.5rem 1.50rem;
+		text-shadow: none;
+		transition: all 0.3s ease-in-out;
+	}
+
+}
+
+.alert-border-icon.alert-primary {
+	color: $primary;
+}
+
+.alert-border-icon.alert-secondary {
+	color: $secondary;
+}
+
+.alert-border-icon.alert-success {
+	color: $success;
+}
+
+.alert-border-icon.alert-danger {
+	color: $danger;
+}
+
+.alert-border-icon.alert-warning {
+	color: $warning;
+}
+
+.alert-border-icon.alert-info {
+	color: $info;
+}
+
+.alert-border-icon.alert-light {
+	color: $dark;
+}
+
+.alert-border-icon.alert-dark {
+	color: $dark;
+}
+
+.alert-icon.alert-primary {
+	color: $white;
+}
+
+.alert-icon.alert-secondary {
+	color: $white;
+}
+
+.alert-icon.alert-success {
+	color: $white;
+}
+
+.alert-icon.alert-danger {
+	color: $white;
+}
+
+.alert-icon.alert-warning {
+	color: $dark;
+}
+
+.alert-icon.alert-info {
+	color: $white;
+}
+
+.alert-icon.alert-light {
+	color: $dark;
+}
+
+.alert-icon.alert-dark {
+	color: $white;
+}
+
+.close {
+	text-shadow: none;
+}

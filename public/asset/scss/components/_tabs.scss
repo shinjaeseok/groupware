@@ -1,0 +1,120 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.tab {
+	.nav-link {
+		i {
+			padding-right: 0.7143rem;
+		}
+
+	}
+
+	.nav-pills {
+		.nav-link {
+			color: $dark;
+			border-radius: 3px;
+			padding: 0.7rem 2rem;
+			background-color: $body-bg;
+		}
+
+		.nav-link.active {
+			background-color: $primary;
+			color: $white;
+		}
+
+		.show {
+			>.nav-link {
+				background-color: $primary;
+				color: $white;
+			}
+
+		}
+
+	}
+
+	.tab-content {
+		padding-top: 1.429rem;
+	}
+
+}
+
+.tab.tab-outline {
+	ul.nav {
+		border-bottom: 1px solid $border-color;
+	}
+
+	.nav-link {
+		border-bottom: 2px solid transparent;
+		color: $dark;
+	}
+
+	>.nav-link {
+		border-bottom: 2px solid transparent;
+	}
+
+	.nav-link.active {
+		border-bottom: 2px solid $primary;
+		color: $primary;
+	}
+
+	.show {
+		>.nav-link {
+			border-bottom: 2px solid $primary;
+			color: $primary;
+		}
+
+	}
+
+}
+
+.tab.tab-vertical {
+	ul.nav {
+		display: table-cell;
+		min-width: 120px;
+		vertical-align: top;
+		width: 150px;
+	}
+
+	.tab-content {
+		padding-top: 0;
+		display: table-cell;
+		vertical-align: top;
+		padding-left: 1.429rem;
+	}
+
+}
+
+.tab.tab-center {
+	ul.nav {
+		-ms-flex-pack: center !important;
+		justify-content: center !important;
+	}
+
+}
+
+.tab.tab-right {
+	ul.nav {
+		-ms-flex-pack: end !important;
+		justify-content: flex-end !important;
+	}
+
+}
+
+@media screen and (max-width:575px) {
+	.tab.tab-vertical ul.nav {
+		width: 100%;
+		display: block;
+	}
+
+	.tab.tab-vertical .tab-content {
+		padding-top: 1rem;
+		padding-left: 0;
+	}
+
+	.tab .nav-pills .nav-link {
+		margin-bottom: 5px;
+	}
+
+}

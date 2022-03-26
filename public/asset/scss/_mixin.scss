@@ -1,0 +1,54 @@
+/////////////////////
+// Template Name: Oxoury - Responsive Admin Dashboard Template
+// Author: Infinitysoftway
+////////////////////
+
+
+// transition  @include transition (all, 0.3s, ease-in-out)
+@mixin transition($what: all, $time: 0.5s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition: $what $time $how;
+    -ms-transition: $what $time $how;
+    -o-transition: $what $time $how;
+    transition: $what $time $how; 
+}
+
+// box-shadow @include box-shadow(0, 1px, 15px, rgba(0, 0, 0, 0.1));
+ @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -ms-box-shadow:inset $top $left $blur $color;
+    -o-box-shadow:inset $top $left $blur $color;
+    -ms-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -ms-box-shadow: $top $left $blur $color;
+    -o-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+
+ // @include background-opacity($warning, 0.5);
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+
+// @include border-opacity(#warning, 0.5);
+@mixin border-opacity($color, $opacity: 0.5) {
+    border: $color;
+    border: rgba($color, $opacity);
+}
+
+
+// @include linear-gradient($black, $white, .5);
+@mixin linear-gradient($left-color, $right-color, $opacity) {
+    background: -moz-linear-gradient(left, rgba($left-color, $opacity) 0%, rgba($right-color, $opacity) 100%); 
+    background: -webkit-linear-gradient(left, rgba($left-color, $opacity) 0%, rgba($right-color, $opacity) 100%); 
+    background: linear-gradient(to rught, rgba($left-color, $opacity) 0%, rgba($right-color, $opacity) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str(rgba($left-color, $opacity))}', endColorstr='#{ie-hex-str(rgba($right-color, $opacity))}',GradientType=0 );
+}

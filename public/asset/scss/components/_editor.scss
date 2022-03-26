@@ -1,0 +1,55 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+// summernote
+.note-popover.popover {
+	display: none;
+}
+
+.note-editor.note-frame {
+	border-color: $border-color;
+
+	.btn {
+		i {
+			padding-right: 0;
+		}
+
+	}
+
+}
+
+.note-toolbar-wrapper {
+	.btn {
+		border-radius: 0;
+		background: $light;
+		margin: 0;
+		color: $dark;
+		padding: 0.175rem 0.7rem;
+	}
+
+	.dropdown-toggle {
+		&::after {
+			display: none;
+		}
+
+	}
+
+	.panel-heading.note-toolbar {
+		background: $light;
+	}
+
+}
+
+// SimpleMDE Markdown Editor
+.CodeMirror {
+	.CodeMirror-code {
+		.cm-comment {
+			background: transparent;
+		}
+
+	}
+
+}

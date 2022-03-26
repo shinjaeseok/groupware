@@ -1,0 +1,50 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.error-01 {
+    h1 {
+        font-size: 14rem;
+        line-height: 1.0;
+    }
+
+    span {
+        font-size: 1.7rem;
+    }
+
+}
+
+.error-02 {
+    p {
+        color: $white;
+        margin-top: 3rem;
+        font-size: $font-xl;
+    }
+
+}
+
+.error-03 {
+    h1 {
+        font-size: 14rem;
+        line-height: 1.0;
+    }
+
+    span {
+        font-size: 2rem;
+        margin-top: 2rem;
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .error-01 h1 {
+        font-size: 13rem;
+    }
+
+    .error-03 h1 {
+        font-size: 7rem;
+    }
+
+}

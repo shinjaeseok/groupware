@@ -1,0 +1,71 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.table {
+	width: 100% !important;
+
+	.action {
+		background: $light;
+	}
+
+	td {
+		vertical-align: middle;
+	}
+
+	th {
+		vertical-align: middle;
+	}
+
+}
+
+.table-bordered {
+	td {
+		border-color: $border-color;
+	}
+
+	th {
+		border-color: $border-color;
+	}
+
+}
+
+.table-striped {
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background-color: $light;
+			}
+
+		}
+
+	}
+
+}
+
+.table-hover {
+	tbody {
+		tr {
+			&:hover {
+				background-color: $light;
+			}
+
+		}
+
+	}
+
+}
+
+@media screen and (max-width:767px) {
+	div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+		justify-content: center;
+		margin-top: 0.8rem;
+	}
+
+	.dt-buttons .btn {
+		margin-bottom: 4px;
+	}
+
+}

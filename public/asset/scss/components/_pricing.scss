@@ -1,0 +1,263 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+// pricing-01
+.pricing-01 {
+	border: 1px solid $border-color;
+	padding: 3.571rem 2.143rem;
+
+	.pricing-price {
+		>span {
+			font-size: 4.286rem;
+			line-height: 1.5;
+			color: $primary;
+			font-weight: 500;
+			display: block;
+			margin-top: 1.429rem;
+		}
+
+		span {
+			span.mo {
+				font-size: 1.143rem;
+			}
+
+		}
+
+	}
+
+	.pricing-list {
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: block;
+				list-style: none;
+				padding: 0.7143rem 0;
+			}
+
+		}
+
+	}
+
+	.pricing-button {
+		margin-top: 1.429rem;
+	}
+
+}
+
+// pricing-02
+.pricing-02 {
+	.pricing-head {
+		@include background-opacity($success, 0.3);
+		padding: 1.429rem 2.143rem;
+		display: block;
+		display: flex;
+		justify-content: space-between;
+
+		.pricing-title {
+			display: flex;
+			align-items: center;
+			align-content: flex-start;
+		}
+
+		.pricing-price {
+			display: flex;
+			align-items: center;
+			align-content: flex-start;
+		}
+
+	}
+
+	.pricing-price {
+		>span {
+			font-size: 2.143rem;
+			line-height: 1.5;
+			color: $success;
+			font-weight: 500;
+			display: block;
+		}
+
+		span {
+			span.mo {
+				font-size: 1.143rem;
+			}
+
+		}
+
+	}
+
+	.pricing-list {
+		margin-top: 1.429rem;
+
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: block;
+				list-style: none;
+				padding: 1.143rem 0;
+				border-bottom: 1px solid $border-color;
+			}
+
+		}
+
+	}
+
+	.pricing-button {
+		margin-top: 2.143rem;
+		padding-bottom: 2.143rem;
+	}
+
+}
+
+.pricing-02.active {
+	@include box-shadow(0, 1px, 35px, rgba(131, 141, 244, 0.1));
+}
+
+.pricing-02.active .pricing-head {
+	@include background-opacity($primary, 0.2);
+}
+
+.pricing-02.active {
+	.pricing-price {
+		>span {
+			color: $primary;
+		}
+
+	}
+
+}
+
+// pricing-03
+.pricing-03 {
+	border: 1px solid $border-color;
+	padding: 3.571rem 2.143rem;
+
+	.pricing-title {
+		margin-bottom: 1.429rem;
+
+		i {
+			font-size: 7.143rem;
+			margin-bottom: 1.429rem;
+		}
+
+	}
+
+	.pricing-price {
+		>span {
+			font-size: 40px;
+			line-height: 1.5;
+			color: $primary;
+			font-weight: 500;
+			display: block;
+			margin-top: 1.429rem;
+		}
+
+		span {
+			span.mo {
+				font-size: 1.143rem;
+			}
+
+		}
+
+	}
+
+	.pricing-list {
+		ul {
+			padding: 0 5rem;
+			margin: 0;
+
+			li {
+				display: block;
+				list-style: none;
+				padding: 0.7143rem 0;
+				border-bottom: 1px solid $border-color;
+			}
+
+		}
+
+	}
+
+}
+
+// pricing-04
+.pricing-04 {
+	@include box-shadow(0, 1px, 25px, rgba(0, 0, 0, 0.05));
+	padding: 3.571rem 2.143rem;
+	margin-top: 2.857rem;
+
+	.pricing-price {
+		>span {
+			font-size: 4.286rem;
+			line-height: 1.5;
+			color: $dark;
+			font-weight: 500;
+			display: block;
+			margin-top: 1.429rem;
+		}
+
+		span {
+			span.mo {
+				font-size: 1.143rem;
+			}
+
+		}
+
+	}
+
+	.pricing-list {
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				display: block;
+				list-style: none;
+				padding: 0.7143rem 0;
+			}
+
+		}
+
+	}
+
+	.pricing-button {
+		margin-top: 1.429rem;
+	}
+
+}
+
+.pricing-04.active {
+	padding: 80px 2.143rem;
+	margin-top: -0.7143rem;
+	background-color: $primary;
+	@include box-shadow(0, 1px, 25px, rgba(0, 0, 0, 0.1));
+
+	h4 {
+		color: $white;
+	}
+
+	span {
+		color: $white;
+	}
+
+	li {
+		color: $white;
+	}
+
+}
+
+@media screen and (max-width:1199px) {
+	.pricing-03 .pricing-list ul {
+		padding: 0;
+	}
+
+	.pricing-02 .pricing-head {
+		display: block;
+	}
+
+}

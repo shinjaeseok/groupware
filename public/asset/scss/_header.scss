@@ -1,0 +1,774 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+// HEADER
+
+.header.header-fixed {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+.header {
+	display: table-cell;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-color: #ffffff;
+	height: 70px;
+	position: relative;
+	z-index: 999;
+}
+
+.header .header-middle {
+	display: flex;
+	align-items: center;
+}
+
+.header .logo-color {
+	background-color: #282a3c;
+	width: 325px;
+	padding: 0px 30px;
+	display: table-cell;
+	vertical-align: top;
+	height: 100%;
+}
+
+.header .logo {
+	display: table-cell;
+	vertical-align: middle;
+	height: 70px;
+}
+
+.header .logo img {
+	height: 36px;
+}
+
+.header-topbar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.1);
+	position: relative;
+}
+
+.header-topbar .topbar-left {
+	display: flex;
+}
+
+.header-topbar .topbar-left .side-toggle {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 30px;
+	background: $light;
+	text-align: center;
+	display: inline-block;
+	font-size: 20px;
+}
+
+.header-topbar .topbar-right {
+	margin-left: auto;
+}
+
+.header-topbar .side-icon {
+	padding-left: 20px;
+}
+
+.header-topbar .side-icon a {
+	font-size: $font-xl;
+}
+
+.header-topbar .side-icon,
+.header-topbar .search-box {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	position: relative;
+}
+
+.header .dropdown-toggle {
+	font-size: $font-base;
+	line-height: 1.5;
+}
+
+.header .dropdown-toggle:after {
+	display: none;
+}
+
+.header .topbar-right > ul {
+	margin-bottom: 0;
+}
+
+.header .topbar-right > ul .dropdown .dropdown-menu {
+	width: 300px;
+}
+
+.header .topbar-right > ul {
+	display: table;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.header .topbar-right > ul > li {
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+	padding-right: 20px;
+}
+
+.header .topbar-right > ul > li > a {
+	table-layout: fixed;
+	height: 100%;
+	vertical-align: middle;
+	display: table;
+	font-size: 1.5rem;
+}
+
+.header .topbar-right > ul > li > a span {
+	height: 100%;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+// user-profile
+.header .topbar-right > ul .dropdown.user-profile .dropdown-menu {
+	padding: 0;
+}
+
+.header .topbar-right > ul .dropdown.user-profile .dropdown-menu .profile-pic {
+	padding: 1.5rem;
+	border-bottom: 1px solid $border-color;
+}
+
+.header .topbar-right > ul .dropdown.user-profile .dropdown-menu .profile-info {
+	padding: 1rem;
+}
+
+// notifications
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu {
+	padding: 0;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu .notifications-title {
+	padding: 1.5rem;
+	border: 1px solid $border-color;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu ul li {
+	padding: 1.2rem 1.5rem;
+	border-bottom: 1px solid $border-color;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu ul li:last-child {
+	margin-bottom: 0;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu .media .media-body a {
+	font-weight: 400;
+	display: block;
+	margin-bottom: 0.1rem;
+	color: $dark;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu .media .media-body a:hover {
+	color: $primary;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu .media .media-body span {
+	color: $body-text;
+}
+
+.header .topbar-right > ul .dropdown.notifications .dropdown-menu .media .media-body span i {
+	padding-right: 0.2rem;
+}
+
+.header .topbar-right > ul .dropdown.notifications a span {
+	position: relative;
+}
+
+.header .topbar-right > ul .dropdown.notifications a .notifications-badge {
+	content: '';
+	width: 5px;
+	height: 5px;
+	background-color: $danger;
+	border-radius: 50%;
+	position: absolute;
+	top: 25%;
+	right: 0;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+// language
+.header .topbar-right > ul .dropdown.language .dropdown-menu {
+	padding: 0;
+	width: 240px;
+}
+
+.header .topbar-right > ul .dropdown.language .dropdown-menu .language-title {
+	padding: 1.5rem;
+	border-bottom: 1px solid $border-color;
+}
+
+.header .topbar-right > ul .dropdown.language .dropdown-menu .language-title p {
+	color: $white;
+}
+
+.header .topbar-right > ul .dropdown.language > a .flag-icon {
+	width: 1.5rem;
+}
+
+.header .topbar-right > ul .dropdown.language .dropdown-menu .flag-icon {
+	width: 1.5rem;
+	margin-right: 0.8rem;
+}
+
+.header .topbar-right > ul .dropdown.language .language-choose a {
+	padding: 1.2rem 1.5rem;
+	border-bottom: 1px solid $border-color;
+}
+
+// messages
+.header .topbar-right > ul .dropdown.messages .dropdown-menu {
+	padding: 0;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .messages-title {
+	padding: 1.5rem;
+	border-bottom: 1px solid $border-color;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu ul li {
+	padding: 1.2rem 1.5rem;
+	border-bottom: 1px solid $border-color;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu ul li:last-child {
+	margin-bottom: 0;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body a {
+	font-weight: 400;
+	display: inline-block;
+	margin-bottom: 0.1rem;
+	color: $dark;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body a:hover {
+	color: $primary;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body .messages-name {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body .time-date {
+	color: $body-text;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body p {
+	color: $body-text;
+	margin-bottom: 0;
+	font-size: 1rem;
+	margin-top: 0.2rem;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body span i {
+	padding-right: 0.2rem;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body .messages-replay a {
+	color: $body-text;
+	margin-right: 0.8rem;
+}
+
+.header .topbar-right > ul .dropdown.messages .dropdown-menu .media .media-body .messages-replay a:hover {
+	color: $primary;
+}
+
+.header .topbar-right > ul .dropdown.messages a span {
+	position: relative;
+}
+
+.header .topbar-right > ul .dropdown.messages a .messages-badge {
+	content: '';
+	width: 5px;
+	height: 5px;
+	background-color: $danger;
+	border-radius: 50%;
+	position: absolute;
+	top: 25%;
+	right: 0;
+	-webkit-animation-name: flash;
+	animation-name: flash;
+	-webkit-animation-duration: 2.5s;
+	animation-duration: 2.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.right-sidebar {
+	height: 100%;
+	background-color: $white;
+	z-index: 9;
+	box-shadow: 0px 1px 15px 1px rgba(69, 65, 78, 0.1);
+}
+
+.right-sidebar .tab {
+	padding: 2rem;
+}
+
+.sidebar-chat .list-group-item {
+	border: 0;
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 0.7143rem;
+	display: block;
+	padding: 0.7143rem 0rem;
+	cursor: pointer;
+
+	.media {
+		.media-body {
+			display: flex;
+			justify-content: space-between;
+		}
+
+	}
+
+}
+
+.sidebar-chat .list-group-item:last-child {
+	border: none;
+}
+
+.sidebar-chat .chat-contact ul li {
+	display: inline-block;
+	margin: 0 1rem 1rem 0;
+}
+
+// sidebar-project 
+.sidebar-project .project-item {
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 2rem;
+}
+
+.sidebar-setting .account-setting {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid $border-color;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
+}
+
+// search
+.header-topbar .search-box .search {
+	position: relative;
+}
+
+.header-topbar .search-box .search a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 18px;
+	color: #898b96;
+}
+
+.header-topbar .search-box .search a:hover {
+	color: $primary;
+}
+
+// search
+.search-box .search {
+	position: relative;
+}
+
+.search-box .search a {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 18px;
+	color: #898b96;
+}
+
+.search-box .search a:hover {
+	color: $primary;
+}
+
+.search-box .form-control {
+	background-color: $light;
+}
+
+.header-topbar .navbar {
+	position: inherit;
+}
+
+.animate-menu-push {
+	left: 0;
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.animate-menu-push.animate-menu-push-right {
+	left: 320px;
+}
+
+.animate-menu-push.animate-menu-push-left {
+	left: -320px;
+}
+
+.animate-menu {
+	position: fixed;
+	top: 0;
+	width: 320px;
+	height: 100%;
+	transition: all 0.3s ease;
+}
+
+.animate-menu-left {
+	left: 0;
+}
+
+.animate-menu-left.animate-menu-open {
+	left: 0;
+}
+
+.animate-menu-right {
+	right: -320px;
+	top: 70px;
+}
+
+.animate-menu-right.animate-menu-open {
+	right: 0;
+}
+
+// sidebar-menu
+.sidebar-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-menu > li {
+	position: relative;
+	margin: 0 10px;
+	padding: 0;
+}
+
+.sidebar-menu > li > a {
+	padding: 12px 24px;
+	display: table;
+	color: #868aa8;
+	width: 100%;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+.sidebar-menu > li > a span {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.sidebar-menu > li > a .sidebar-badge .badge {
+	min-width: 16px;
+	min-height: 16px;
+	padding: 1px 3px 0;
+}
+
+.sidebar-menu > li > a > i {
+	display: table-cell;
+	width: 30px;
+	font-size: 1.7rem;
+	color: #525672;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.sidebar-menu > li > a .sidebar-badge {
+	height: 100%;
+	vertical-align: middle;
+	display: table-cell;
+	float: right;
+	margin-top: 3px;
+}
+
+.sidebar-menu li > a > .down-arrow {
+	font-size: 0.8rem;
+	font-weight: 900;
+	transition: all 0.2s ease-in-out;
+	transform: rotate(0deg);
+	vertical-align: middle;
+	height: 100%;
+	text-align: right;
+	width: auto;
+}
+
+.sidebar-menu li > a > .down-arrow:before {
+	transition: all 0.2s ease-in-out;
+}
+
+.sidebar-menu li.sidebar-header {
+	padding: 16px 25px 10px 15px;
+	color: #868aa8;
+	font-weight: 500;
+}
+
+.sidebar-menu .sidebar-submenu {
+	display: none;
+	list-style: none;
+	margin: 0 1px;
+	background-color: #292b3a;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.sidebar-menu .sidebar-submenu .sidebar-submenu {
+	padding-left: 20px;
+}
+
+.sidebar-menu .sidebar-submenu > li > a {
+	padding: 8px 24px 8px 15px;
+	display: flex;
+	align-items: center;
+	font-size: $font-base;
+	color: #686c89;
+}
+
+.sidebar-menu .sidebar-submenu > li > a > i {
+	width: 20px;
+}
+
+.sidebar-menu .sidebar-submenu > li > a > .down-arrow,
+.sidebar-menu .sidebar-submenu > li > a > .fa-angle-down {
+	width: auto;
+	margin-left: auto;
+}
+
+.sidebar-menu li.active > a > .down-arrow:before {
+	transform: rotateZ(90deg);
+	display: inline-block;
+}
+
+.sidebar-menu li.active > .sidebar-submenu {
+	display: block;
+}
+
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li.active > a {
+	color: #9499bb;
+	background-color: #292b3a;
+}
+
+.sidebar-menu .sidebar-submenu > li.active > a,
+.sidebar-menu .sidebar-submenu > li > a:hover {
+	color: $primary;
+}
+
+.sidebar-menu > li.active > a > i,
+.sidebar-menu > li > a:hover > i {
+	color: #9499bb;
+}
+ 
+
+.footer .nav .nav-item .nav-link {
+	color: $body-text;
+}
+
+.footer .nav .nav-item .nav-link:hover {
+	color: $primary;
+}
+
+// header light
+
+.header.header-light {
+	background: $white;
+	border-bottom: 1px solid $border-color;
+
+	.logo-color-light {
+		background: transparent;
+	}
+
+	.header-topbar {
+		box-shadow: none;
+	}
+
+}
+
+.sidebar-panel.sidebar-panel-light {
+	background: transparent;
+	border-right: 1px solid $border-color;
+
+	.sidebar-menu {
+		.sidebar-submenu {
+			background: transparent;
+		}
+
+	}
+
+}
+
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li.active > a {
+	color: $primary;
+	background: white;
+	box-shadow: 0 1px 8px rgba(69, 65, 78, 0.08);
+	border-radius: 5px;
+}
+
+.sidebar-menu > li.active > a > i,
+.sidebar-menu > li > a:hover > i {
+	color: $primary;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width:1200px) {
+
+	/* makes the dropdown full width  */
+	.navbar .dropdown {
+		position: static;
+	}
+
+	.wrapper.sidebar-panel-collapse {
+		.sidebar-panel {
+			width: 80px;
+		}
+
+		.sidebar-menu {
+			> li {
+				margin: 0;
+			}
+
+			li.sidebar-header {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				padding: 16px 8px 10px 8px;
+			}
+
+			span {
+				display: none;
+			}
+
+			li.active > .sidebar-submenu {
+				display: none !important;
+			}
+
+			li.active > a {
+				background: transparent;
+				box-shadow: none;
+			}
+
+		}
+
+	}
+
+	.wrapper.sidebar-panel-collapse .main-panel {
+		padding-left: 115px;
+	}
+
+	.wrapper.sidebar-panel-collapse .sidebar-panel:hover {
+		width: 255px;
+		background: $white;
+
+		span {
+			display: inline-block;
+		}
+
+		li.active > .sidebar-submenu {
+			display: block !important;
+		}
+
+		li.active > a {
+			background: $white;
+			box-shadow: 0 1px 8px rgba(69, 65, 78, 0.08);
+		}
+
+	}
+
+}
+
+@media screen and (max-width:1199px) {
+	.wrapper {
+		.sidebar-panel {
+			width: 0;
+		}
+
+		.main-panel {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+	}
+
+	.wrapper.sidebar-panel-collapse {
+		.sidebar-panel {
+			width: 255px;
+			background: $white;
+		}
+
+	}
+
+	.header {
+		.logo-color {
+			width: 255px;
+			padding: 0px 0px 0 15px;
+		}
+
+	}
+
+	.header-topbar {
+		.search-box {
+			display: none;
+		}
+
+	}
+
+}
+
+@media screen and (max-width:575px) {
+	.header {
+		.logo {
+			img {
+				height: 20px;
+			}
+
+		}
+
+		.logo-color {
+			width: 115px;
+		}
+
+	}
+
+	.header-topbar .topbar-left .side-toggle {
+		margin: 15px 20px 15px 10px;
+	}
+
+	.header .topbar-right > ul {
+		padding: 0;
+	}
+
+	.header .topbar-right > ul > li.language {
+		display: none;
+	}
+
+	.header .topbar-right > ul > li.setting {
+		display: none;
+	}
+
+}

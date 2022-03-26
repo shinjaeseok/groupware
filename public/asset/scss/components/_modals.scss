@@ -1,0 +1,105 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.modal-content {
+	border: none;
+}
+
+.modal-success {
+	.modal-header {
+		.close {
+			padding: 1rem;
+			margin: -1rem -1rem -1rem auto;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			color: $white;
+			opacity: 1;
+			font-size: $font-xll;
+			text-shadow: none;
+		}
+
+		padding: 4rem 1rem;
+
+		i {
+			font-size: 8rem;
+		}
+
+	}
+
+}
+
+.modal-danger {
+	.modal-header {
+		.close {
+			padding: 1rem;
+			margin: -1rem -1rem -1rem auto;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			color: $white;
+			opacity: 1;
+			font-size: $font-xll;
+			text-shadow: none;
+		}
+
+		padding: 4rem 1rem;
+
+		i {
+			font-size: 8rem;
+		}
+
+	}
+
+}
+
+.modal-warning {
+	.modal-header {
+		.close {
+			padding: 1rem;
+			margin: -1rem -1rem -1rem auto;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			color: $white;
+			opacity: 1;
+			font-size: $font-xll;
+			text-shadow: none;
+		}
+
+		padding: 4rem 1rem;
+
+		i {
+			font-size: 8rem;
+		}
+
+	}
+
+}
+
+.modal-info {
+	.modal-header {
+		.close {
+			padding: 1rem;
+			margin: -1rem -1rem -1rem auto;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			color: $white;
+			opacity: 1;
+			font-size: $font-xll;
+			text-shadow: none;
+		}
+
+		padding: 4rem 1rem;
+
+		i {
+			font-size: 8rem;
+		}
+
+	}
+
+}

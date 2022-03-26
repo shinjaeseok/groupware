@@ -1,0 +1,46 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.bootstrap-duallistbox-container {
+	.info {
+		font-size: $font-base;
+	}
+
+	.filter {
+		height: calc(3.0rem + 2px);
+		margin: 0.7143rem 0 1.429rem;
+	}
+
+	.btn {
+		border-radius: 3px;
+		padding: 0.2rem 0.6rem;
+		font-size: $font-xs;
+	}
+
+	select {
+		border-radius: 3px;
+		padding: 0.2rem 0.6rem;
+		font-size: $font-xs;
+
+		&:focus {
+			border-color: $border-color;
+		}
+
+		option {
+			padding: 0.3571rem 0.7143rem;
+		}
+
+	}
+
+	.btn-group.buttons {
+		.btn {
+			border: 1px solid $border-color;
+			background: $body-bg;
+		}
+
+	}
+
+}

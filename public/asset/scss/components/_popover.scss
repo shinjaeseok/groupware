@@ -1,0 +1,11 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+// popover
+.popover {
+	font-family: $main-font;
+	@include box-shadow(0, 1px, 15px, rgba(69, 65, 78, 0.08));
+	border-color: $border-color;
+}

@@ -1,0 +1,68 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+// sweetalert
+.swal2-popup {
+	.swal2-styled.swal2-confirm {
+		background-color: $primary;
+		border: none;
+	}
+
+	.swal2-styled {
+		&:focus {
+			box-shadow: none;
+		}
+
+	}
+
+}
+
+.swal2-progresssteps {
+	.swal2-progresscircle.swal2-activeprogressstep {
+		background-color: $primary;
+	}
+
+	.swal2-progresscircle {
+		background-color: $primary;
+	}
+
+	.swal2-progressline {
+		background-color: $primary;
+	}
+
+	.swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline {
+		background: rgba($primary, 0.5);
+	}
+
+	.swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle {
+		background: rgba($primary, 0.5);
+	}
+
+}
+
+.swal2-popup {
+	.swal2-input {
+		box-shadow: none;
+		border-color: $border-color;
+
+		&:focus {
+			box-shadow: none;
+			border-color: $primary;
+		}
+
+	}
+
+	.swal2-textarea {
+		box-shadow: none;
+		border-color: $border-color;
+
+		&:focus {
+			box-shadow: none;
+			border-color: $primary;
+		}
+
+	}
+
+}

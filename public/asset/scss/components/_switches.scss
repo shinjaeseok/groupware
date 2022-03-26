@@ -1,0 +1,227 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+
+    input {
+        display: none;
+    }
+
+}
+
+.switcher {
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 0.2857rem;
+        }
+
+    }
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $light;
+    @include transition (all, 0.3s, ease-in-out);
+
+    &:after {
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 4px;
+        bottom: 4px;
+        @include transition (all, 0.3s, ease-in-out);
+        background-color: white;
+    }
+
+}
+
+input.primary {
+    &:checked {
+        + {
+            .slider {
+                background-color: $primary;
+            }
+
+        }
+
+    }
+
+}
+
+input.secondary {
+    &:checked {
+        + {
+            .slider {
+                background-color: $secondary;
+            }
+
+        }
+
+    }
+
+}
+
+input.success {
+    &:checked {
+        + {
+            .slider {
+                background-color: $success;
+            }
+
+        }
+
+    }
+
+}
+
+input.info {
+    &:checked {
+        + {
+            .slider {
+                background-color: $info;
+            }
+
+        }
+
+    }
+
+}
+
+input.warning {
+    &:checked {
+        + {
+            .slider {
+                background-color: $warning;
+            }
+
+        }
+
+    }
+
+}
+
+input.danger {
+    &:checked {
+        + {
+            .slider {
+                background-color: $danger;
+            }
+
+        }
+
+    }
+
+}
+
+input {
+    &:focus {
+        + {
+            .slider {
+                box-shadow: 0 0 1px #2196F3;
+            }
+
+        }
+
+    }
+
+    &:checked {
+        + {
+            .slider {
+                &:after {
+                    -webkit-transform: translateX(30px);
+                    -ms-transform: translateX(30px);
+                    transform: translateX(30px);
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.slider.round {
+    border-radius: 34px;
+
+    &:after {
+        border-radius: 50%;
+    }
+
+}
+
+.slider.icon {
+    &:before {
+        color: $dark;
+        top: 6px;
+        margin-left: 0.5714rem;
+        font-size: 1em;
+        text-align: center;
+        position: absolute;
+        font-weight: bold;
+        z-index: 9;
+        font-family: "LineAwesome";
+        text-decoration: inherit;
+        content: "";
+        @include transition (all, 0.3s, ease-in-out)
+    }
+
+}
+
+input {
+    &:checked {
+        + {
+            .slider.icon {
+                &:before {
+                    content: '\f17b';
+                    @include transition (all, 0.3s, ease-in-out);
+                    margin-left: 2.9rem;
+                }
+
+            }
+
+            .slider.name {
+                &:before {
+                    content: 'On';
+                    @include transition (all, 0.3s, ease-in-out);
+                    color: $white;
+                    margin-left: 0.7143rem;
+                    z-index: 9;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.slider.name {
+    &:before {
+        color: $dark;
+        top: 5px;
+        margin-left: 2.214rem;
+        font-size: 1em;
+        text-align: center;
+        position: absolute;
+        text-decoration: inherit;
+        content: 'Off';
+        @include transition (all, 0.3s, ease-in-out)
+    }
+
+}

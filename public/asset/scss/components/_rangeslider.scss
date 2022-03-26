@@ -1,0 +1,144 @@
+/*
+
+Template Name: Oxoury - Responsive Admin Dashboard Template
+Author: Infinitysoftway
+
+*/
+.irs--flat {
+	.irs-line {
+		background-color: $light;
+	}
+
+	.irs-min {
+		background-color: $light;
+	}
+
+	.irs-max {
+		background-color: $light;
+	}
+
+	.irs-bar {
+		background-color: $primary;
+	}
+
+	.irs-from {
+		background-color: $primary;
+
+		&:before {
+			border-top-color: $primary;
+		}
+
+	}
+
+	.irs-to {
+		background-color: $primary;
+
+		&:before {
+			border-top-color: $primary;
+		}
+
+	}
+
+	.irs-single {
+		background-color: $primary;
+
+		&:before {
+			border-top-color: $primary;
+		}
+
+	}
+
+	.irs-handle.state_hover {
+		>i {
+			&:first-child {
+				background-color: $primary;
+			}
+
+		}
+
+	}
+
+	.irs-handle {
+		&:hover {
+			>i {
+				&:first-child {
+					background-color: $primary;
+				}
+
+			}
+
+		}
+
+		>i {
+			&:first-child {
+				background-color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.irs--big {
+	.irs-line {
+		background: $light;
+		border: none;
+	}
+
+	.irs-bar {
+		background: $primary;
+		border: none;
+		box-shadow: none;
+	}
+
+	.irs-grid-pol {
+		background: $primary;
+	}
+
+	.irs-grid-text {
+		color: $primary;
+	}
+
+	.irs-from {
+		background: $primary;
+	}
+
+	.irs-to {
+		background: $primary;
+	}
+
+	.irs-single {
+		background: $primary;
+	}
+
+	.irs-min {
+		background: $light;
+		color: $body-text;
+	}
+
+	.irs-max {
+		background: $light;
+		color: $body-text;
+	}
+
+	.irs-handle {
+		box-shadow: none;
+		background: $primary;
+		border: 3px solid $white;
+
+		&:hover {
+			box-shadow: none;
+			background: $primary;
+			border: 3px solid $white;
+		}
+
+	}
+
+	.irs-handle.state_hover {
+		box-shadow: none;
+		background: $primary;
+		border: 3px solid $white;
+	}
+
+}

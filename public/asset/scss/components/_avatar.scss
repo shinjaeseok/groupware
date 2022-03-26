@@ -1,0 +1,146 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+// avatar
+.avatar {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	border-radius: $border-radius;
+	text-align: center;
+	display: inline-block;
+	line-height: 1.5;
+	background-color: $primary;
+
+	&:before {
+		position: absolute;
+		left: 0;
+		top: 0px;
+		content: "";
+	}
+
+	.status {
+		position: absolute;
+		left: -4px;
+		top: -4px;
+		content: "";
+		width: 12px;
+		height: 12px;
+		border: 2px solid $white;
+		border-radius: $border-radius;
+	}
+
+	img {
+		border-radius: $border-radius;
+	}
+
+	span {
+		font-size: $font-xl;
+	}
+
+}
+
+// avatar status
+.avatar.avatar-sm {
+	.status {
+		left: -2px;
+		top: -2px;
+	}
+
+	width: 36px;
+	height: 36px;
+}
+
+.avatar.avatar-xl {
+	.status {
+		left: 1px;
+		top: 1px;
+	}
+
+	width: 60px;
+	height: 60px;
+}
+
+.avatar.avatar-xll {
+	.status {
+		left: 3px;
+		top: 3px;
+	}
+
+	width: 70px;
+	height: 70px;
+}
+
+// avatar name
+.avatar {
+	.avatar-name {
+		color: $white;
+		font-size: 1rem;
+		line-height: 3.9;
+	}
+
+}
+
+.avatar.avatar-sm {
+	.avatar-name {
+		font-size: 0.8rem;
+		line-height: 3.6;
+	}
+
+}
+
+.avatar.avatar-xl {
+	.avatar-name {
+		font-size: 1.5rem;
+		line-height: 2.9;
+	}
+
+}
+
+.avatar.avatar-xll {
+	.avatar-name {
+		font-size: 1.8rem;
+		line-height: 2.8;
+	}
+
+}
+
+// avatar group
+.avatar-group {
+	margin-left: 10px;
+
+	.avatar {
+		margin-left: -10px;
+		border: 2px solid $white;
+
+		&:hover {
+			z-index: 1;
+			position: relative;
+		}
+
+	}
+
+	.avatar.avatar-sm {
+		.avatar-name {
+			line-height: 3.0;
+		}
+
+	}
+
+	.avatar.avatar-xl {
+		.avatar-name {
+			line-height: 2.6;
+		}
+
+	}
+
+	.avatar.avatar-xll {
+		.avatar-name {
+			line-height: 2.6;
+		}
+
+	}
+
+}

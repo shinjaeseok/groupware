@@ -1,0 +1,37 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.toast {
+	background-color: $primary;
+}
+
+.toast-success {
+	background-color: $success;
+}
+
+.toast-error {
+	background-color: $danger;
+}
+
+.toast-info {
+	background-color: $info;
+}
+
+.toast-warning {
+	background-color: $warning;
+}
+
+#toast-container {
+	>div {
+		box-shadow: none;
+
+		&:hover {
+			box-shadow: none;
+		}
+
+	}
+
+}

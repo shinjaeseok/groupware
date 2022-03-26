@@ -1,0 +1,232 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.chat-sidebar {
+	height: 100%;
+
+	.chat-search {
+		margin-top: 1.229rem;
+	}
+
+	.search {
+		position: relative;
+
+		.form-control {
+			border: 0;
+			border-bottom: 1px solid $border-color;
+			padding: 1.975rem 5rem 1.975rem 4.2rem;
+			border-radius: 0;
+
+			&:focus {
+				border-color: $primary;
+			}
+
+		}
+
+		.search-icon {
+			position: absolute;
+			left: 30px;
+			top: 11px;
+			font-size: 20px;
+			color: $body-text;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		.add-icon {
+			position: absolute;
+			right: 30px;
+			top: 8px;
+		}
+
+	}
+
+	.list-group-item {
+		border: 0;
+		border-bottom: 1px solid $border-color;
+		margin-bottom: 0.7143rem;
+		display: block;
+		padding: 0.7143rem 2.143rem;
+		cursor: pointer;
+
+		.media {
+			.media-body {
+				display: flex;
+				justify-content: space-between;
+			}
+
+		}
+
+	}
+
+	.media {
+		.avatar {
+			+ {
+				.media-body {
+					padding-left: 1.429rem;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.chat-active {
+	.media {
+		.avatar {
+			+ {
+				.media-body {
+					padding-left: 1.429rem;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+.chat-msg {
+	.media {
+		.avatar {
+			+ {
+				.media-body {
+					padding-left: 1.429rem;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// chat-msg
+.chat-msg {
+	.list-group-item {
+		border: 0;
+		padding: 0 2.143rem;
+		margin-bottom: 2.143rem;
+		display: flex;
+
+		&:first-child {
+			margin-top: 20px;
+		}
+
+		.media {
+			.media-body {
+				p {
+					background-color: $light;
+					padding: 1rem 2rem;
+					margin-bottom: 0;
+					border-radius: 30px 30px 30px 0px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.list-group-item.chat-me {
+		display: flex;
+		justify-content: flex-end;
+
+		.media {
+			.media-body {
+				p {
+					background-color: $primary;
+					color: $white;
+					border-radius: 30px 30px 0px 30px;
+				}
+
+				small {
+					text-align: right;
+				}
+
+			}
+
+		}
+
+	}
+
+	.media {
+		.media-body {
+			.time {
+				display: block;
+				margin-top: 0.3571rem;
+			}
+
+		}
+
+	}
+
+	.chat-me {
+		.media {
+			.media-body {
+				padding-right: 1.429rem;
+			}
+
+		}
+
+	}
+
+}
+
+// chat-type-msg
+.chat-active {
+	padding: 1.429rem 2.143rem 0.4286rem;
+}
+
+.chat-type-msg {
+	position: relative;
+
+	.form-control {
+		border: 0;
+		border-bottom: 1px solid $border-color;
+		padding: 1.775rem 3rem 1.775rem 4.6rem;
+		border-radius: 0;
+		height: calc(5.0rem + 2px);
+
+		&:focus {
+			border-color: $primary;
+		}
+
+	}
+
+	.chat-icon {
+		position: absolute;
+		font-size: $font-lg;
+		top: 20px;
+		left: 30px;
+	}
+
+	.chat-button {
+		position: absolute;
+		right: 0;
+		top: 17px;
+		margin-right: 2.143rem;
+	}
+
+	.chat-attachment {
+		font-size: $font-lg;
+		margin-right: 0.7143rem;
+		color: $body-text;
+
+		&:hover {
+			color: $primary;
+		}
+
+	}
+
+}

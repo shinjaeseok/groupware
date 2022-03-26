@@ -1,0 +1,97 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+// badge
+.badge {
+	padding: 0.1429rem 0.7143rem;
+	font-size: 0.7857rem;
+	line-height: 1.4;
+	font-weight: 400;
+}
+
+.badge.badge-number {
+	padding: 0.07143rem 0.4286rem;
+}
+
+.badge-primary {
+	background-color: $primary;
+}
+
+.badge-secondary {
+	background-color: $secondary;
+}
+
+.badge-success {
+	background-color: $success;
+}
+
+.badge-danger {
+	background-color: $danger;
+}
+
+.badge-warning {
+	background-color: $warning;
+}
+
+.badge-info {
+	background-color: $info;
+}
+
+.badge-light {
+	background-color: $light;
+}
+
+.badge-dark {
+	background-color: $dark;
+}
+
+// badge overlay
+.badge-overlay-primary {
+	@include background-opacity($primary, 0.2);
+	color: $primary;
+	font-weight: 500;
+}
+
+.badge-overlay-secondary {
+	@include background-opacity($secondary, 0.2);
+	color: $secondary;
+	font-weight: 500;
+}
+
+.badge-overlay-success {
+	@include background-opacity($success, 0.2);
+	color: $success;
+	font-weight: 500;
+}
+
+.badge-overlay-danger {
+	@include background-opacity($danger, 0.2);
+	color: $danger;
+	font-weight: 500;
+}
+
+.badge-overlay-warning {
+	@include background-opacity($warning, 0.2);
+	color: $dark;
+	font-weight: 500;
+}
+
+.badge-overlay-info {
+	@include background-opacity($info, 0.2);
+	color: $info;
+	font-weight: 500;
+}
+
+.badge-overlay-light {
+	@include background-opacity($light, 0.2);
+	color: $light;
+	font-weight: 500;
+}
+
+.badge-overlay-dark {
+	@include background-opacity($dark, 0.2);
+	color: $dark;
+	font-weight: 500;
+}

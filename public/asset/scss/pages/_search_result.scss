@@ -1,0 +1,20 @@
+
+/////////////////////
+// Template Name: Oxoury - Responsive Admin Dashboard Template
+// Author: Infinitysoftway
+////////////////////
+ 
+ .search-result {
+	margin: 2rem 0;
+	border-bottom: 1px solid $border-color;
+	padding-bottom: 1rem;
+	.link {
+		font-weight: 400;
+		color: $primary;
+	}
+	&:last-child {
+		border-bottom: 0;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+}

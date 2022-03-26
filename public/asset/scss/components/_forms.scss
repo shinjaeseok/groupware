@@ -1,0 +1,212 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.form-group {
+	label {
+		color: $dark;
+	}
+
+}
+
+.form-control {
+	height: calc(3.0rem + 2px);
+	border-radius: 3px;
+	padding: 0.775rem 3rem 0.775rem 1.2rem;
+	border-color: $border-color;
+	transition: all 0.5s ease-in-out;
+
+	&:focus {
+		box-shadow: none;
+		border-color: $primary;
+	}
+
+}
+
+.form-control-lg {
+	height: calc(3.875rem + 2px);
+}
+
+.form-control-sm {
+	height: calc(2.5rem + 2px);
+}
+
+.custom-control-label {
+	padding-left: 0.7143rem;
+	padding-top: 0.2143rem;
+
+	&::before {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	&::after {
+		width: 1.5rem;
+		height: 1.5rem;
+		left: -1.4rem;
+	}
+
+}
+
+.input-group-append {
+	.btn {
+		padding: 0.1rem 1.6rem;
+	}
+
+}
+
+.input-group {
+	.custom-file {
+		.custom-file-label {
+			border-color: $border-color;
+
+			&:focus {
+				box-shadow: none;
+				border-color: $primary;
+			}
+
+		}
+
+		.custom-file-input {
+			border-color: $border-color;
+
+			&:focus {
+				box-shadow: none;
+				border-color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.custom-file-input {
+	&:focus~.custom-file-label {
+		box-shadow: none;
+		border-color: $primary;
+	}
+
+}
+
+// radio 
+.custom-control-label {
+	&::after {
+		width: 1.5rem;
+		height: 1.5rem;
+		left: -1.5rem;
+	}
+
+	&::before {
+		width: 1.5rem;
+		height: 1.5rem;
+		left: -1.5rem;
+	}
+
+}
+
+.custom-radio {
+	.custom-control-input {
+		&:checked~.custom-control-label {
+			&::before {
+				background-color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.custom-control-input {
+	&:focus~.custom-control-label {
+		&::before {
+			box-shadow: none;
+		}
+
+	}
+
+}
+
+.custom-checkbox {
+	.custom-control-label {
+		&::before {
+			box-shadow: none;
+		}
+
+	}
+
+	.custom-control-input {
+		&:checked~.custom-control-label {
+			&::before {
+				background-color: $primary;
+				border-color: $primary;
+				box-shadow: none;
+			}
+
+		}
+
+	}
+
+}
+
+// dropzone
+.dropzone {
+	border: 2px dashed $border-color;
+
+	i {
+		font-size: 9.5rem;
+		color: $primary;
+	}
+
+}
+
+#signupForm {
+	label.error {
+		width: auto;
+		display: inline;
+		color: $danger;
+		display: block;
+	}
+
+}
+
+#commentForm {
+	label.error {
+		width: auto;
+		display: inline;
+		color: $danger;
+		display: block;
+	}
+
+}
+
+#newsletter_topics {
+	label.error {
+		display: none;
+		color: $danger;
+	}
+
+}
+
+nav {
+	.form-inline.form-search {
+		position: relative;
+
+		a {
+			position: absolute;
+			right: 20px;
+			top: 6px;
+			font-size: 18px;
+			color: #898b96;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}

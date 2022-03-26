@@ -1,0 +1,124 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.accordion {
+	.card {
+		padding: 0;
+		box-shadow: none;
+		margin-bottom: 1rem;
+
+		.card-header {
+			box-shadow: none;
+			border: none;
+			padding: 0;
+			background-color: transparent;
+
+			.accordion-title {
+				cursor: pointer;
+				color: $primary;
+				padding: 1.2rem 1.5rem;
+				background-color: $light;
+
+				h5 {
+					color: $primary;
+					font-size: 1.2rem;
+				}
+
+				&:before {
+					position: absolute;
+					right: 1.25rem;
+					font-family: 'LineAwesome';
+					text-decoration: inherit;
+					content: '';
+					line-height: 1.5rem;
+					font-size: 1.2rem;
+					font-weight: bold;
+					color: $primary;
+				}
+
+			}
+
+			.accordion-title.collapsed {
+				h5 {
+					color: $dark;
+				}
+
+				&:before {
+					content: '';
+					color: $dark;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// accordion-outline
+.accordion.accordion-outline {
+	.card {
+		.card-header {
+			.accordion-title {
+				background-color: transparent;
+				border: 1px solid $border-color;
+			}
+
+		}
+
+	}
+
+}
+
+// accordion-background
+.accordion.accordion-background {
+	.card {
+		.card-header {
+			.accordion-title {
+				background-color: $primary;
+				color: $white;
+
+				h5 {
+					color: $white;
+				}
+
+				&:before {
+					color: $white;
+				}
+
+			}
+
+			.accordion-title.collapsed {
+				background-color: $light;
+				color: $dark;
+
+				h5 {
+					color: $dark;
+				}
+
+				&:before {
+					color: $dark;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// accordion-box
+.accordion.accordion-box {
+	.card-body {
+		background-color: $light;
+	}
+
+}
+
+.accordion>.card:not(:last-of-type) {
+	border-bottom: 1px solid $border-color;
+}

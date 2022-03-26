@@ -1,0 +1,433 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.spinner {
+  margin: 1em;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 4px solid $border-color;
+  animation: circ-anim 0.7s linear infinite;
+  text-align: center;
+}
+
+.spinner-01 {
+  border-bottom-color: $primary;
+}
+
+.spinner-02 {
+  border-color: $primary;
+  border-bottom-color: transparent;
+}
+
+.spinner-03 {
+  border-color: $primary;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-04 {
+  border: 3px solid $primary;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    top: 50%;
+    left: 50;
+    margin-left: -40%;
+    margin-top: -40%;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05 {
+  border: 3px solid $primary;
+  position: relative;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background: transparent;
+    top: 50%;
+    left: 50;
+    margin-left: -40%;
+    margin-top: -40%;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    animation: circ-anim 0.35s reverse linear infinite;
+  }
+
+}
+
+.spinner-06 {
+  border-width: 0px;
+  border-radius: 50%;
+  border-top: 3px solid $primary;
+  border-right: 3px solid transparent;
+}
+
+@keyframes circ-anim {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+// spinner-overlay
+.spinner-overlay {
+  position: relative;
+
+  .spinner {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    margin-top: -15px;
+  }
+
+  &:before {
+    background: rgba($white, 0.6);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+}
+
+// spinner-01
+.spinner-01.spinner-primary {
+  border-bottom-color: $primary;
+}
+
+.spinner-01.spinner-secondary {
+  border-bottom-color: $secondary;
+}
+
+.spinner-01.spinner-success {
+  border-bottom-color: $success;
+}
+
+.spinner-01.spinner-danger {
+  border-bottom-color: $danger;
+}
+
+.spinner-01.spinner-warning {
+  border-bottom-color: $warning;
+}
+
+.spinner-01.spinner-info {
+  border-bottom-color: $info;
+}
+
+.spinner-01.spinner-dark {
+  border-bottom-color: $dark;
+}
+
+// spinner-02
+.spinner-02.spinner-primary {
+  border-color: $primary;
+  border-bottom-color: transparent;
+}
+
+.spinner-02.spinner-secondary {
+  border-color: $secondary;
+  border-bottom-color: transparent;
+}
+
+.spinner-02.spinner-success {
+  border-color: $success;
+  border-bottom-color: transparent;
+}
+
+.spinner-02.spinner-danger {
+  border-color: $danger;
+  border-bottom-color: transparent;
+}
+
+.spinner-02.spinner-warning {
+  border-color: $warning;
+  border-bottom-color: transparent;
+}
+
+.spinner-02.spinner-info {
+  border-color: $info;
+  border-bottom-color: transparent;
+}
+
+.spinner-02.spinner-dark {
+  border-color: $dark;
+  border-bottom-color: transparent;
+}
+
+// spinner-03
+.spinner-03.spinner-primary {
+  border-color: $primary;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-03.spinner-secondary {
+  border-color: $secondary;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-03.spinner-success {
+  border-color: $success;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-03.spinner-danger {
+  border-color: $danger;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-03.spinner-warning {
+  border-color: $warning;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-03.spinner-info {
+  border-color: $info;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.spinner-03.spinner-dark {
+  border-color: $dark;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+// spinner-04
+.spinner-04.spinner-primary {
+  border-color: $primary;
+
+  &:after {
+    border-color: $primary;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-04.spinner-secondary {
+  border-color: $secondary;
+
+  &:after {
+    border-color: $secondary;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-04.spinner-success {
+  border-color: $success;
+
+  &:after {
+    border-color: $success;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-04.spinner-danger {
+  border-color: $danger;
+
+  &:after {
+    border-color: $danger;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-04.spinner-warning {
+  border-color: $warning;
+
+  &:after {
+    border-color: $warning;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-04.spinner-info {
+  border-color: $info;
+
+  &:after {
+    border-color: $info;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-04.spinner-dark {
+  border-color: $dark;
+
+  &:after {
+    border-color: $dark;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+// spinner-05
+.spinner-05.spinner-primary {
+  border-color: $primary;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $primary;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05.spinner-secondary {
+  border-color: $secondary;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $secondary;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05.spinner-success {
+  border-color: $success;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $success;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05.spinner-danger {
+  border-color: $danger;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $danger;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05.spinner-warning {
+  border-color: $warning;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $warning;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05.spinner-info {
+  border-color: $info;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $info;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+.spinner-05.spinner-dark {
+  border-color: $dark;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+
+  &:after {
+    border-color: $dark;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+
+}
+
+// spinner-06
+.spinner-06.spinner-primary {
+  border-top-color: $primary;
+}
+
+.spinner-06.spinner-secondary {
+  border-top-color: $secondary;
+}
+
+.spinner-06.spinner-success {
+  border-top-color: $success;
+}
+
+.spinner-06.spinner-danger {
+  border-top-color: $danger;
+}
+
+.spinner-06.spinner-warning {
+  border-top-color: $warning;
+}
+
+.spinner-06.spinner-info {
+  border-top-color: $info;
+}
+
+.spinner-06.spinner-dark {
+  border-top-color: $dark;
+}

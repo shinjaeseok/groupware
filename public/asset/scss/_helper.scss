@@ -1,0 +1,262 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+// text color
+.text-primary {
+	color: $primary !important;
+}
+
+.text-secondary {
+	color: $secondary !important;
+}
+
+.text-success {
+	color: $success !important;
+}
+
+.text-danger {
+	color: $danger !important;
+}
+
+.text-warning {
+	color: $warning !important;
+}
+
+.text-info {
+	color: $info !important;
+}
+
+.text-dark {
+	color: $dark !important;
+}
+
+.text-light {
+	color: $body-text !important;
+}
+
+// bg color
+.bg-primary {
+	background-color: $primary !important;
+}
+
+.bg-secondary {
+	background-color: $secondary !important;
+}
+
+.bg-success {
+	background-color: $success !important;
+}
+
+.bg-danger {
+	background-color: $danger !important;
+}
+
+.bg-warning {
+	background-color: $warning !important;
+}
+
+.bg-info {
+	background-color: $info !important;
+}
+
+.bg-light {
+	background-color: $light !important;
+}
+
+.bg-dark {
+	background-color: $dark !important;
+}
+
+.bg-soft-primary {
+	background-color: rgba($primary, 0.2) !important;
+}
+
+.bg-soft-secondary {
+	background-color: rgba($secondary, 0.2) !important;
+}
+
+.bg-soft-success {
+	background-color: rgba($success, 0.2) !important;
+}
+
+.bg-soft-danger {
+	background-color: rgba($danger, 0.2) !important;
+}
+
+.bg-soft-warning {
+	background-color: rgba($warning, 0.2) !important;
+}
+
+.bg-soft-info {
+	background-color: rgba($info, 0.2) !important;
+}
+
+.bg-soft-light {
+	background-color: rgba($light, 0.2) !important;
+}
+
+.bg-soft-dark {
+	background-color: rgba($dark, 0.2) !important;
+}
+
+// bg overlay
+.bg-primary-overlay {
+	@include background-opacity($primary, 0.3);
+}
+
+.bg-secondary-overlay {
+	@include background-opacity($secondary, 0.3);
+}
+
+.bg-bg-success-overlay {
+	@include background-opacity($success, 0.3);
+}
+
+.bg-bg-danger-overlay {
+	@include background-opacity($danger, 0.3);
+}
+
+.bg-bg-warning-overlay {
+	@include background-opacity($warning, 0.3);
+}
+
+.bg-bg-info-overlay {
+	@include background-opacity($info, 0.3);
+}
+
+.bg-bg-light-overlay {
+	@include background-opacity($light, 0.3);
+}
+
+.bg-bg-dark-overlay {
+	@include background-opacity($dark, 0.3);
+}
+
+// bg social
+.bg-facebook {
+	background-color: $facebook;
+}
+
+.bg-twitter {
+	background-color: $twitter;
+}
+
+.bg-google-plus {
+	background-color: $google-plus;
+}
+
+.bg-linkedin {
+	background-color: $linkedin;
+}
+
+.bg-instagram {
+	background-color: $instagram;
+}
+
+.bg-pinterest {
+	background-color: $pinterest;
+}
+
+.bg-dribbble {
+	background-color: $dribbble;
+}
+
+.bg-youtube {
+	background-color: $youtube;
+}
+
+.bg-dropbox {
+	background-color: $dropbox;
+}
+
+.bg-github {
+	background-color: $github;
+}
+
+.bg-skype {
+	background-color: $skype;
+}
+
+.bg-tumblr {
+	background-color: $tumblr;
+}
+
+.bg-flickr {
+	background-color: $flickr;
+}
+
+// font size
+.font-xs {
+	font-size: $font-xs;
+}
+
+.font-sm {
+	font-size: $font-sm;
+}
+
+.font-base {
+	font-size: $font-base;
+}
+
+.font-md {
+	font-size: $font-md;
+}
+
+.font-lg {
+	font-size: $font-lg;
+}
+
+.font-xl {
+	font-size: $font-xl;
+}
+
+.font-xll {
+	font-size: $font-xll;
+}
+
+.font-xlll {
+	font-size: $font-xlll;
+}
+
+// font-weight
+.fw-100 {
+	font-weight: 100;
+}
+
+.fw-200 {
+	font-weight: 200;
+}
+
+.fw-300 {
+	font-weight: 300;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-600 {
+	font-weight: 600;
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.fw-800 {
+	font-weight: 800;
+}
+
+.fw-900 {
+	font-weight: 900;
+}
+
+.border-radius {
+	border-radius: 0.71rem !important;
+}

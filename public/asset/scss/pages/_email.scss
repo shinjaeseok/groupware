@@ -1,0 +1,287 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+// mail-sidebar
+.mail-sidebar {
+	.btn {
+		margin: 2.143rem 2.143rem 2.143rem;
+	}
+
+	.title {
+		padding: 0 2.143rem;
+		margin-bottom: 1.071rem;
+	}
+
+	.nav {
+		.nav-item {
+			.nav-link {
+				color: $body-text;
+				padding: .7rem 2.143rem;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					background: rgba($primary, 0.2);
+					color: $primary;
+				}
+
+				i {
+					padding-right: 0.7143rem;
+				}
+
+			}
+
+			.nav-link.active {
+				background: rgba($primary, 0.2);
+				color: $primary;
+			}
+
+		}
+
+		margin-bottom: 1.429rem;
+	}
+
+}
+
+// mail-topbar
+.mail-topbar {
+	padding: 2.143rem;
+
+	.search-bar {
+		margin-bottom: 0.7143rem;
+	}
+
+	.tool-bar {
+		margin-bottom: 0.7143rem;
+	}
+
+	.mail-toolbar-right {
+		.mail-pager {
+			.btn {
+				padding: 0.125rem 1.0rem 0.1rem;
+			}
+
+		}
+
+	}
+
+	.search {
+		position: relative;
+
+		.form-control {
+			padding: 1.0rem 4.2rem 1.0rem 1.775rem;
+			border-radius: 0;
+
+			&:focus {
+				border-color: $primary;
+			}
+
+		}
+
+		i {
+			position: absolute;
+			right: 20px;
+			top: 11px;
+			font-size: 1.429rem;
+			color: $body-text;
+		}
+
+	}
+
+	.mail-setting {
+		a {
+			font-size: $font-xl;
+			padding-left: 1.429rem;
+			color: $body-text;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.mail-toolbar {
+	.btn.btn-light {
+		background-color: transparent;
+	}
+
+	.btn {
+		padding: 0.575rem 1.3rem 0.375rem;
+		color: $body-text;
+
+		&:hover {
+			color: $primary;
+		}
+
+		&:focus {
+			color: $primary;
+		}
+
+		i {
+			padding-right: 0;
+			font-size: $font-md;
+		}
+
+	}
+
+}
+
+.mail-toolbar-right {
+	i {
+		font-size: $font-md;
+	}
+
+}
+
+// mail-list-item
+.mail-list-item {
+	border: 1px solid $border-color;
+	padding: 1.5rem;
+	display: flex;
+	border-bottom: 0;
+
+	&:last-child {
+		border-bottom: 1px solid $border-color;
+	}
+
+	.mail-list-item-checkbox {
+		margin-right: 1rem;
+	}
+
+	.mail-list-item-user {
+		margin-right: 1.429rem;
+	}
+
+	.mail-list-item-name {
+		margin-right: 2.143rem;
+	}
+
+	.mail-list-item-setting {
+		i {
+			font-size: 1.429rem;
+			padding-right: 0.3571rem;
+		}
+
+	}
+
+	.mail-list-item-info {
+		display: flex;
+		flex: 1 1 0;
+
+		a {
+			font-size: 1.143rem;
+			font-weight: 500;
+			color: $dark;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+		p {
+			font-size: $font-sm;
+		}
+
+	}
+
+}
+
+// mail-read-topbar
+.mail-read-topbar {
+	padding: 2.143rem 2.143rem 1.429rem;
+	display: flex;
+
+	.media {
+		display: flex;
+		flex: 1;
+
+		.avatar {
+			margin-right: 1.429rem;
+		}
+
+	}
+
+	.mail-read-topbar-right {
+		a {
+			font-size: 1.6rem;
+			color: $body-text;
+			padding-left: 0.5714rem;
+
+			&:hover {
+				color: $primary;
+			}
+
+		}
+
+	}
+
+}
+
+.mail-read-info {
+	padding: 2.143rem;
+	border-top: 1px solid $border-color;
+
+	.mail-read-info-atta {
+		margin: 2.143rem 0;
+		padding: 1.429rem 0;
+		border-top: 1px solid $border-color;
+		border-bottom: 1px solid $border-color;
+
+		.file {
+			background-color: $light;
+			padding: 0.4286rem 0.7143rem;
+			border-radius: 3px;
+			margin-top: 0.7143rem;
+			display: inline-block;
+		}
+
+	}
+
+}
+
+// mail-composer
+.mail-composer {
+	padding: 2.143rem;
+
+	.title {
+		margin-bottom: 1.429rem;
+	}
+
+	.reply-button {
+		margin-top: 1.429rem;
+	}
+
+}
+
+@media screen and (max-width:767px) {
+	.mail-list-item {
+		display: block;
+	}
+
+	.mail-list-item .mail-list-item-name {
+		margin: 10px 0;
+	}
+
+	.mail-list-item-setting,
+	.mail-list-item-user {
+		margin-top: 10px;
+	}
+
+}
+
+@media screen and (max-width:575px) {
+	.mail-read-topbar {
+		display: block;
+	}
+
+	.mail-read-topbar-right {
+		margin-top: 1rem;
+	}
+
+}

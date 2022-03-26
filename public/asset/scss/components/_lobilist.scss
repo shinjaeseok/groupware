@@ -1,0 +1,137 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+
+.lobilists {
+	.lobilist.lobilist-default {
+		.lobilist-header {
+			background: $body-bg;
+			border-color: $border-color;
+		}
+
+	}
+
+	.lobilist.lobilist-danger {
+		.lobilist-header {
+			background: $danger;
+			border-color: $danger;
+		}
+
+		border-color: $danger;
+	}
+
+	.lobilist.lobilist-success {
+		.lobilist-header {
+			background: $success;
+			border-color: $success;
+		}
+
+		border-color: $success;
+	}
+
+	.lobilist.lobilist-warning {
+		.lobilist-header {
+			background: $warning;
+			border-color: $warning;
+		}
+
+		border-color: $warning;
+	}
+
+	.lobilist.lobilist-info {
+		.lobilist-header {
+			background: $info;
+			border-color: $info;
+		}
+
+		border-color: $info;
+	}
+
+	.lobilist.lobilist-primary {
+		.lobilist-header {
+			background: $primary;
+			border-color: $primary;
+		}
+
+		border-color: $primary;
+	}
+
+	.lobilist.lobilist-default {
+		border-color: $border-color;
+	}
+
+	.lobilist-actions {
+		.btn {
+			&:hover {
+				background: transparent !important;
+			}
+
+		}
+
+	}
+
+	.lobilist-header.title-editing {
+		.lobilist-actions {
+			.btn-cancel-title-editing {
+				line-height: 1.4;
+			}
+
+		}
+
+	}
+
+	.lobilist-item-title {
+		font-weight: 500;
+		font-size: $font-base;
+	}
+
+}
+
+.lobilist-wrapper {
+	.lobilist-form-footer {
+		.btn {
+			i {
+				padding-right: 0;
+			}
+
+			background: $white;
+			color: $dark;
+			border: none;
+
+			&:hover {
+				background: $dark;
+				color: $white;
+				border: none;
+			}
+
+		}
+
+	}
+
+	.lobilist-footer {
+		display: none;
+	}
+
+	.lobilist-actions {
+		.btn {
+			padding: 0.3rem 0.9rem;
+
+			i {
+				padding-right: 0;
+			}
+
+		}
+
+	}
+
+	.lobilist-title.hide {
+		display: none;
+	}
+
+}
+
+.dd3-handle {
+	font-size: 0;
+}

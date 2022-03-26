@@ -1,0 +1,196 @@
+/////////////////////
+// Template Name:Oxoury - Responsive Admin Dashboard Template
+// Author:Infinitysoftway
+////////////////////
+
+.blog {
+	.blog-info {
+		background-color: $white;
+		padding: 1.538rem;
+		border-bottom: 1px solid $border-color;
+
+		.blog-date {
+			a {
+				font-weight: 500;
+			}
+
+		}
+
+	}
+
+	.blog-bottom {
+		background-color: $white;
+		padding: 1rem 1.538rem;
+
+		.user {
+			img {
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				margin-right: 0.5rem;
+			}
+
+		}
+
+		ul {
+			li {
+				display: inline-block;
+				margin-right: .8rem;
+
+				a {
+					color: $body-text;
+					vertical-align: middle;
+
+					i {
+						color: $primary;
+						font-weight: blod;
+						font-size: 1.2rem;
+						padding-right: 0.3rem;
+					}
+
+					&:hover {
+						color: $primary;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// blog-single 
+.blog-single {
+	padding: 1rem;
+
+	.blog-image {
+		margin-bottom: 2rem;
+	}
+
+	.blog-bottom {
+		padding: 0;
+		margin: 2rem 0;
+	}
+
+	.blog-details {
+		ul {
+			li {
+				padding: 0.5rem 0;
+			}
+
+		}
+
+	}
+
+	.blog-tag {
+		h5 {
+			display: inline-block;
+			margin-right: 1rem;
+		}
+
+		ul {
+			display: inline-block;
+
+			li {
+				display: inline-block;
+				margin-right: 0.2rem;
+
+				a {
+					display: block;
+					padding: 0.3rem 1.2rem;
+					background: $light;
+					border-radius: 30px;
+					color: $dark;
+
+					&:hover {
+						background-color: $primary;
+						color: $white;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.blog-share {
+		h5 {
+			display: inline-block;
+			margin-right: 1rem;
+		}
+
+		ul {
+			display: inline-block;
+
+			li {
+				display: inline-block;
+				margin-right: 0.2rem;
+			}
+
+		}
+
+	}
+
+	.blog-comments {
+		margin-top: 3rem;
+	}
+
+	.comments-list {
+		margin-top: 3rem;
+
+		li {
+			display: block;
+		}
+
+		li.comments {
+			display: table;
+			padding-bottom: 3rem;
+
+			.comment-avtar {
+				display: table-cell;
+				padding-right: 2rem;
+			}
+
+			.comment-info {
+				display: table-cell;
+				vertical-align: top;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+		}
+
+		li.comments.children {
+			padding-left: 8rem;
+		}
+
+	}
+
+}
+
+@media screen and (max-width:575px) {
+	.blog-single .comments-list li.comments .comment-avtar {
+		padding-right: 1rem;
+	}
+
+	.blog-single .comments-list li.comments .comment-avtar .avatar.avatar-xll {
+		width: 50px;
+		height: 50px;
+	}
+
+	.blog-single .comments-list li.comments.children {
+		padding-left: 5rem;
+	}
+
+	.blog .blog-bottom ul li {
+		margin-bottom: 0.5rem;
+	}
+
+}
