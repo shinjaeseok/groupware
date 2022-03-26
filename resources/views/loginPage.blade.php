@@ -31,7 +31,7 @@
                 {{--<h3 class="font-bold" style="color:#000000; font-size: 24px;">제이픽스에 오신것을<br> 환영합니다.</h3>--}}
             </div>
             {{--<h3>로그인</h3>--}}
-            <form action="login" method="post" id="login_form" onsubmit="return check()">
+            <form action="login" method= "post" id="login_form" onsubmit="return check()">
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" id="employee_code" name="employee_code" placeholder="사원코드" autocomplete="off">
