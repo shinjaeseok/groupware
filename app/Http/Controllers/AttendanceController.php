@@ -484,8 +484,8 @@ class AttendanceController extends Controller
                 $item->sub_work_time = strtotime($item->work_end_time) - strtotime($item->work_start_time);
                 $item->work_time = !$item->work_end_time  ? '-' : Carbon::parse($item->sub_work_time)->format("H:i:s");
 
-                $item->progress_work_start_time = $item->work_start_time_after ? $item->work_start_time_after : $item->work_start_time ? $item->work_start_time : '-';
-                $item->progress_work_end_time = $item->work_end_time_after ? $item->work_end_time_after : $item->work_end_time ? $item->work_end_time : '-';
+                $item->progress_work_start_time = ($item->work_start_time_after ? $item->work_start_time_after : $item->work_start_time) ? $item->work_start_time : '-';
+                $item->progress_work_end_time = ($item->work_end_time_after ? $item->work_end_time_after : $item->work_end_time) ? $item->work_end_time : '-';
 
                 $item->work_time == '-' ? $work_state = '근무중' : $work_state = '퇴근';
 
