@@ -236,7 +236,12 @@ class ApprovalController extends Controller
             Approval::where('id', $approval_id)->delete();
             ApprovalLine::where('fk_approval_id', $approval_id)->delete();
             ApprovalComment::where('fk_approval_id', $approval_id)->delete();
-            FileManager::fileDelete('approval', $approval_id);
+            // 기존 첨부 파일 삭제
+            $prev_attach_file_data = AttachFile::where('fk_table', 'approval')->where('fk_id', $approval_id)->first();
+
+            if ($prev_attach_file_data) {
+                FileManager::fileDelete('approval', $approval_id);
+            }
 
             DB::commit();
         } catch (\Exception $e) {
