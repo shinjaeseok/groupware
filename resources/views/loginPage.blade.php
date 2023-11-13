@@ -46,7 +46,7 @@
                 </div>
                     <button type="submit" class="btn btn-primary block full-width m-b" id="btn_login">로그인</button>
             </form>
-            <p class="m-t"> <small>joohong.dev &copy; 2021</small> </p>
+            <p class="m-t"> <small>joohong.dev &copy; 2023</small> </p>
         </div>
     </div>
 
