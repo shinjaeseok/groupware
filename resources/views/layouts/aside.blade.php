@@ -70,7 +70,7 @@
                 </a>
                 <ul class="nav nav-second-level collapse" >
                     <li class="{{ (request()->is('task/daily_task')) ? 'active' : '' }}"><a href="/task/daily_task">업무일지</a></li>
-                    <li class="{{ (request()->is('task/project')) ? 'active' : '' }}"><a href="/task/project">프로젝트[작업중]</a></li>
+                    {{--<li class="{{ (request()->is('task/project')) ? 'active' : '' }}"><a href="/task/project">프로젝트[작업중]</a></li>--}}
                     @if (Auth::user()->manager == 'Y')
                     <li class="{{ (request()->is('task/daily_task_manager')) ? 'active' : '' }}"><a href="/task/daily_task_manager">업무일지현황[관리자]</a></li>
                     @endif

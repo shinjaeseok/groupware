@@ -2,11 +2,6 @@ l<script>
     // Ajax URL
     var url = "/setting/employee";
 
-    let stateList = {
-        Y: '퇴사',
-        N: '재직',
-    };
-
     // view
     function doSearch(table_id = 1, type = 'current') {
         // 초기화
@@ -27,24 +22,19 @@ l<script>
                 {
                     data: "is_deleted", orderable: false,
                     render: function (data, type, row, meta) {
-                        // if (!row.menu_url) {
-                        //     return '';
-                        // }
-                        let txt = stateList[data];
-                        let btnElements = '';
-                        for (let item in stateList) {
-                            btnElements += `<a class="dropdown-item" style="font-size: 12px;" href="javascript:void(0)" onclick="changeState(${row.id}, '${item}', this)">${stateList[item]}</a>`;
+
+                        let selected = '';
+                        let selected2 = '';
+                        if (data == 'Y') {
+                            selected = 'selected';
+                        } else {
+                            selected2 = 'selected';
                         }
 
-                        if (txt == '재직') {
-                            return `<div class="btn-group" role="group">
-                                <button type="button" class="btn btn-xs btn-success dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false" data-state="${data}">${txt}</button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 37px; left: 0;">${btnElements}</div></div>`
-                        } else {
-                            return `<div class="btn-group" role="group">
-                                <button type="button" class="btn btn-xs btn-secondary dropdown-toggle waves-effect waves-themed" data-toggle="dropdown" aria-expanded="false" data-state="${data}">${txt}</button>
-                                <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: top, left; top: 37px; left: 0;">${btnElements}</div></div>`
-                        }
+                        return `<select class="form-control input-sm active_change" data-active='${data}' data-id='${row.idx}'>
+                                            <option value="Y" ${selected}>재직</option>
+                                            <option value="N" ${selected2}>퇴사</option>
+                                    </select>`;
                     }
                 },
                 { data: "name" , orderable: false},
@@ -327,12 +317,37 @@ l<script>
         });
     }
 
-    function changeState(id, state, thiz) {
-        thiz.parentElement.classList.remove('show');
-        let mainBtn = thiz.parentElement.previousElementSibling;
-        if(mainBtn.getAttribute('data-state') === state){
-            return false;
-        }
+    // function changeState(id, state, thiz) {
+    //     thiz.parentElement.classList.remove('show');
+    //     let mainBtn = thiz.parentElement.previousElementSibling;
+    //     if(mainBtn.getAttribute('data-state') === state){
+    //         return false;
+    //     }
+    //
+    //     $.ajax({
+    //         type: "POST",
+    //         data: {
+    //             id:id,
+    //             state:state,
+    //         },
+    //         url: url + "/delete",
+    //         dataType: 'json',
+    //         cache: false,
+    //         async: false,
+    //     }).done(function (result) {
+    //         if (result.status) {
+    //             toastr["success"](result.message,'성공');
+    //             doSearch();
+    //         } else {
+    //             toastr["error"](result.message,'오류');
+    //         }
+    //     });
+    // }
+
+
+    $(document).on("change", ".active_change", function() {
+        let id = $(this).data("id");
+        let state = $(this).val();
 
         $.ajax({
             type: "POST",
@@ -344,15 +359,14 @@ l<script>
             dataType: 'json',
             cache: false,
             async: false,
-        }).done(function (result) {
+        }).done(function(result) {
             if (result.status) {
-                toastr["success"](result.message,'성공');
-                doSearch();
+                toastr["success"](result.message);
             } else {
-                toastr["error"](result.message,'오류');
+                toastr["error"](result.message);
             }
         });
-    }
+    });
 
     $('#password_check').on("click", function (){
         $('#modal_2').modal("show");
