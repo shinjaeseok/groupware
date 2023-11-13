@@ -93,7 +93,7 @@
     $(document).ready(function () {
         $('#employee_code').focus();
         var userCode = getCookie("userCode");
-        $("input[name='employee_code']").val(userCode);
+        // $("input[name='employee_code']").val(userCode);
 
         $("#btn_login").attr('disabled', true);
         if ($("input[name='employee_code']").val() != "") { // 그 전에 ID를 저장해서 처음 페이지 로딩 시, 입력 칸에 저장된 ID가 표시된 상태라면,
