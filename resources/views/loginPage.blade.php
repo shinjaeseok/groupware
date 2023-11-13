@@ -34,10 +34,10 @@
             <form action="login" method= "post" id="login_form" onsubmit="return check()">
                 @csrf
                 <div class="form-group">
-                    <input type="text" class="form-control" id="employee_code" name="employee_code" placeholder="사원코드" autocomplete="off">
+                    <input type="text" class="form-control" id="employee_code" name="employee_code" placeholder="사원코드" autocomplete="off" value="admin">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호">
+                    <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호" value="admin">
                 </div>
                 <div class="text-left mb-3">
                     <div class="form-check abc-checkbox abc-checkbox-primary">
