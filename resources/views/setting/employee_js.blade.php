@@ -31,7 +31,7 @@ l<script>
                             selected2 = 'selected';
                         }
 
-                        return `<select class="form-control input-sm active_change" data-active='${data}' data-id='${row.idx}'>
+                        return `<select class="form-control input-sm active_change" data-active='${data}' data-id='${row.id}'>
                                             <option value="Y" ${selected}>재직</option>
                                             <option value="N" ${selected2}>퇴사</option>
                                     </select>`;
