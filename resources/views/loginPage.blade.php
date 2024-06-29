@@ -27,7 +27,7 @@
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
             <div class="mb-4" style="margin-top:150px;">
-                <h3 class="font-bold" style="color:#000000; font-size: 24px;">그룹웨어</h3>
+                <h3 class="font-bold" style="color:#000000; font-size: 24px;">그룹웨어2</h3>
             </div>
             {{--<h3>로그인</h3>--}}
             <form action="login" method= "post" id="login_form" onsubmit="return check()">
